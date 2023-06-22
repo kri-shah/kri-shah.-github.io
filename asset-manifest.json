@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.c2ed79f0.css",
+    "main.js": "/react-gh-pages/static/js/main.287fa181.js",
+    "static/js/787.28cb0dcd.chunk.js": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js",
+    "static/media/44.jpg": "/react-gh-pages/static/media/44.429e99d5147b4dff829d.jpg",
+    "static/media/Sequence.png": "/react-gh-pages/static/media/Sequence.6cb49d5795074c0892f4.png",
+    "static/media/hompic.png": "/react-gh-pages/static/media/hompic.0d0ebe3cd9f012d5ffa3.png",
+    "static/media/FROST PIC.png": "/react-gh-pages/static/media/FROST PIC.c79ffb52375d3b0e59f1.png",
+    "static/media/Krish.png": "/react-gh-pages/static/media/Krish.b7518af19effc720bb62.png",
+    "static/media/dunks.png": "/react-gh-pages/static/media/dunks.af5ff6ab9e0df3a45e56.png",
+    "static/media/AYTO.png": "/react-gh-pages/static/media/AYTO.2ec1eb4c1213c9e0eb2c.png",
+    "static/media/HillCipher.png": "/react-gh-pages/static/media/HillCipher.48d61641c11e3f303374.png",
+    "static/media/nyc.jpg": "/react-gh-pages/static/media/nyc.99791e7a9b7daa36ac10.jpg",
+    "static/media/ewb.png": "/react-gh-pages/static/media/ewb.12d799f5bcc5b60de570.png",
+    "static/media/Resume.pdf": "/react-gh-pages/static/media/Resume.17ad27b6baa6b932b7b6.pdf",
+    "static/media/wall.jpg": "/react-gh-pages/static/media/wall.eaece610d49346b5d9b5.jpg",
+    "static/media/beach background.jpg": "/react-gh-pages/static/media/beach background.2f291f8a540f1d925a36.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.c2ed79f0.css.map": "/react-gh-pages/static/css/main.c2ed79f0.css.map",
+    "main.287fa181.js.map": "/react-gh-pages/static/js/main.287fa181.js.map",
+    "787.28cb0dcd.chunk.js.map": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2ed79f0.css",
+    "static/js/main.287fa181.js"
+  ]
+}
