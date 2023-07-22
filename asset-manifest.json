@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b2659d4c.css",
-    "main.js": "/static/js/main.232a9669.js",
+    "main.js": "/static/js/main.d069bf4c.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/44.jpg": "/static/media/44.429e99d5147b4dff829d.jpg",
     "static/media/Sequence.png": "/static/media/Sequence.6cb49d5795074c0892f4.png",
@@ -13,16 +13,17 @@
     "static/media/HillCipher.png": "/static/media/HillCipher.48d61641c11e3f303374.png",
     "static/media/nyc.jpg": "/static/media/nyc.99791e7a9b7daa36ac10.jpg",
     "static/media/ewb.png": "/static/media/ewb.12d799f5bcc5b60de570.png",
+    "static/media/Krish_Shah_Resume.pdf": "/static/media/Krish_Shah_Resume.dc937f0fc8f63bcf534e.pdf",
     "static/media/Resume.pdf": "/static/media/Resume.17ad27b6baa6b932b7b6.pdf",
     "static/media/wall.jpg": "/static/media/wall.eaece610d49346b5d9b5.jpg",
     "static/media/beach background.jpg": "/static/media/beach background.2f291f8a540f1d925a36.jpg",
     "index.html": "/index.html",
     "main.b2659d4c.css.map": "/static/css/main.b2659d4c.css.map",
-    "main.232a9669.js.map": "/static/js/main.232a9669.js.map",
+    "main.d069bf4c.js.map": "/static/js/main.d069bf4c.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b2659d4c.css",
-    "static/js/main.232a9669.js"
+    "static/js/main.d069bf4c.js"
   ]
 }
