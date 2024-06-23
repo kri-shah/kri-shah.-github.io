@@ -22,12 +22,12 @@ header{
   margin: 0;
   padding: 0;
   border: 0;
-  
+  height: 2.9vh;
 }
 /*does the hover stuff for the buttons*/
 
 a:link, a:visited {
-  height: 25px;
+  
   background-color: #203166;
   color: white;
   padding: 14px 25px;
@@ -49,37 +49,32 @@ a:hover, a:active {
   background-color: #404b6b;
 }
 
-
-
-
 .HomePage{
-  /*background-color: rgb(207, 156, 80);*/
-  /*background-image: url(https://wallpaperaccess.com/full/2825710.gif);*/
-  background-image: url("./beach background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  color:rgb(255, 255, 255);
+  background-color: rgb(192, 214, 223);
+  color:rgb(39, 41, 50);
   margin: 0;
   padding: 0;
   border: 0;
   width: 100%;
 
   
-
+  
   font-size: 50px; 
-  height: 93.65vh; 
+  height: 93.55vh; 
   /*
   display: flex;
   flex-direction: row;
   */
 }
-
+.Home1{
+  padding: 0%;
+  margin: 0;
+}
 
 .Projects{
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 #project1{
@@ -87,12 +82,13 @@ a:hover, a:active {
   margin: 0;
   padding: 0;
   background-color: #8a99c7;
-
+  
 }
+
 
 #Abt{
   width:100%;
-  height: 93.65vh; 
+  height: 93.55vh; 
   background-image: url("./nyc.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -121,6 +117,11 @@ a:hover, a:active {
 #pa{
   width:85%;
 }
+#pa2{
+  width:85%;
+
+}
+
 
 img {
   width: 440px;
@@ -233,7 +234,6 @@ img {
   width: 350px;
 
   font-size: 20px; 
-
 }
 
 #text1size{
@@ -243,6 +243,8 @@ img {
 }
 #t1s{
   font-size: 15px; 
+  text-align: left;
+  margin: 6px;
 }
 
 .carousel-control-prev,
@@ -263,6 +265,7 @@ img {
   right: 50px;
 }
 #Contact{
+  width: 100%;
   display: flex;
   flex-direction: column;
   
@@ -290,8 +293,11 @@ img {
   font-size: 15px;
   color: #e9e9e9;
   font-weight: 10;
-}
 
+}
+::placeholder{
+  color:rgb(242, 242, 242); 
+}
 #TextBox2{
   background-color: hsla(0, 0%, 34%, 0.602);
   height: 3.5vh;
@@ -361,7 +367,7 @@ img {
   cursor: pointer;
   margin: 10px;
   position:relative;
-  left:-10px;
+  
 }
 #Link:hover{
   background-color: hsla(0, 0%, 53%, 0.602);
@@ -379,7 +385,7 @@ img {
   border: 4px solid rgba(255, 255, 255, 0.652);
   cursor: pointer;
   position:relative;
-  left:-12px;
+  left:-5.75px;
 }
 #EmailMe:hover{
   background-color: hsla(0, 0%, 53%, 0.602);
@@ -390,18 +396,15 @@ img {
   background-color:hsla(0, 0%, 34%, 0);
   border-radius: 12px;
   font-size: 25px;
-  width: 70px;
+  width: 50px;
   height: 10px;
   font-family: "Lucida Console", "Courier New", monospace;
-  /*color: rgba(33, 33, 33, 0.652);*/
-  color: rgba(255, 255, 255, 0.652);  
+  color: rgba(255, 255, 255, 0.652);
   font-weight: bold;
   border: 4px solid rgba(255, 255, 255, 0.652);
   cursor: pointer;
-  margin: 10px;
   position:relative;
-  left:-13.5px;
-  
+  left:5px;
 }
 #GitHub:hover{
   background-color: hsla(0, 0%, 53%, 0.602);
@@ -416,4 +419,20 @@ img {
   
 }
 
+#resume2{
+  background-color: hsla(0, 0%, 53%, 0);
 
+}
+#resume2:hover{
+  background-color: hsla(0, 0%, 53%, 0);
+
+}
+
+#abtme2{
+  display: flex;
+  flex-direction: column;
+}
+
+#sne{
+  height: 42px;
+}
