@@ -1,126 +1,82 @@
-import React, { useState } from 'react';
-import '../Projects.css';
-import TypingAnimation from './TypingAnimation';
-
-function Projects() {
-  const text = "Here are a few of my projects!";
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-  const [isHovered2, setIsHovered2] = useState(false);
-
-  const handleMouseEnter2 = () => {
-    setIsHovered2(true);
-  };
-
-  const handleMouseLeave2 = () => {
-    setIsHovered2(false);
-  };
-
-  const [isHovered3, setIsHovered3] = useState(false);
-
-  const handleMouseEnter3 = () => {
-    setIsHovered3(true);
-  };
-
-  const handleMouseLeave3 = () => {
-    setIsHovered3(false);
-  };
-
-  const [isHovered4, setIsHovered4] = useState(false);
-
-  const handleMouseEnter4 = () => {
-    setIsHovered4(true);
-  };
-
-  const handleMouseLeave4 = () => {
-    setIsHovered4(false);
-  };
-
-  return (
-    <div id="ProjPage"> 
-      <br/>
-      <TypingAnimation text={text} level="h4" />
-    
-      <div id="projects-container">
-        <a
-          id="proj1"
-          href="https://github.com/kri-shah/Hill-Code"
-          target="_blank"
-          rel="noreferrer"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div id="proj1img"></div>
-          <h5>Portfolio Website</h5>
-          <p1>Personal portfolio website built using ReactJS, HTML, CSS, and JavaScript</p1>
-        </a>
-        <a
-          id="proj2"
-          href="https://github.com/kri-shah/Hill-Code"
-          target="_blank"
-          rel="noreferrer"
-          onMouseEnter={handleMouseEnter2}
-          onMouseLeave={handleMouseLeave2}
-        >
-          <div id="proj2img"></div>
-          <h3>Hill Cipher</h3>
-          <p1>C++ implementation of the Hill cipher: a polygraphic substitution cipher based on linear algebra.</p1>
-        </a>
-        <a
-          id="proj3"
-          href="https://github.com/kri-shah/Honors-Project"
-          target="_blank"
-          rel="noreferrer"
-          onMouseEnter={handleMouseEnter3}
-          onMouseLeave={handleMouseLeave3}
-        >
-          <div id="proj3img"></div>
-          <h3>"Are You the One"</h3>
-          <p1>Emulates different playing algorithms for MTV's hit show "Are You the One."</p1>
-        </a>
-        <a
-          id="proj4"
-          href="https://github.com/kri-shah/Hill-Code"
-          target="_blank"
-          rel="noreferrer"
-          onMouseEnter={handleMouseEnter4}
-          onMouseLeave={handleMouseLeave4}
-        >
-          <div id="proj4img"></div>
-          <h3>Sequence Detector</h3>
-          <p1>A sequence detector built using shift registers. Output goes high for 0001 or 1110.</p1>
-        </a>
-      </div>
-      <div id="OC"> 
-        <a id="GitHub" href={'https://github.com/kri-shah'} target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-      <div id="gittxt1" style={{ display: isHovered ? 'block' : 'none' }}>
-        <p1>Click to view the Github!</p1>
-      </div>
-      
-      <div id="gittxt2" style={{ display: isHovered2 ? 'block' : 'none' }}>
-        <p1>Click to view the Github!</p1>
-      </div>
-      
-
-      <div id="gittxt3" style={{ display: isHovered3 ? 'block' : 'none' }}>
-        <p1>Click to view the Github!</p1>
-      </div>
-
-      <div id="gittxt4" style={{ display: isHovered4 ? 'block' : 'none' }}>
-        <p1>Click to view the Github!</p1>
-      </div>
-
-  
-    </div>
-  );
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  height: 92.75vh;
 }
 
-export default Projects;
+.App-header {
+  background-color: #f0f0f0;
+  font-size: larger;
+  padding: 20px;
+  color: rgb(41, 41, 41);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.project-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #666;
+  margin: 10px 0;
+}
+
+.project-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #444;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.github-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px; /* Add some space between the icon and the text */
+}
+
+#github {
+  background: #fff;
+  float: right;
+  padding: 0%;
+  margin: 0;
+  margin-top: 10px;
+}
