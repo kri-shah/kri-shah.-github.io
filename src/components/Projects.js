@@ -1,82 +1,67 @@
-.App {
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  height: 92.75vh;
-}
+import React from 'react';
+import '../Projects.css';
+import TypingAnimation from './TypingAnimation';
 
-.App-header {
-  background-color: #f0f0f0;
-  font-size: larger;
-  padding: 20px;
-  color: rgb(41, 41, 41);
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
+import portfolioImg from '../port.png';
+import compresssImg from '../zip.jpeg';
+import mmaiImg from '../cnn.png';
+import dvrImg from '../dvr.jpeg';
+const projects = [
+  {
+    name: 'MMAI',
+    description: 'Developed a full-stack machine learning web application by training a predictive model for MMA fight outcomes, achieving a 69% accuracy',
+    technologies: 'TensorFlow, Keras, Scikit-learn, Flask, JavaScript, HTML/CSS',
+    githubLink: 'https://github.com/kri-shah/MMAI',
+    image: mmaiImg
+  },
+  {
+    name: 'Multithreaded DVR Protocol',
+    description: 'Implemented a multithreaded DVR simulation in C with pthreads, incorporating dynamic network topology changes for realism',
+    technologies: 'C, POSIX Threads, Networks',
+    githubLink: 'https://github.com/kri-shah/C-Projects',
+    image: dvrImg
+  },
+  {
+    name: 'Data Compression /Decompression Tool',
+    description: 'Engineered a high-efficiency tool using advanced algorithms such as Huffman coding, Burrows-Wheeler Transform, and Move-to-Front coding',
+    technologies: 'Python, Heapq, Radix Sort',
+    githubLink: 'https://github.com/kri-shah/Data-Compression-Decompression-Tool',
+    image: compresssImg
+  },
+  {
+    name: 'Portfolio Website',
+    description: 'Utilized React.js, HTML, CSS, and JavaScript to build an interactive showcase of professional accomplishments, projects, and skills',
+    technologies: 'React.js, Node.js, JavaScript, HTML/CSS',
+    githubLink: 'https://github.com/kri-shah/kri-shah.github.io',
+    image: portfolioImg
+  }
   
-}
+];
 
-.project-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding: 20px;
-  width: 300px;
-  text-align: left;
+const ProjectCard = ({ project }) => (
+  <div className="project-card">
+    <img src={project.image} alt={project.name} className="project-image" />
+    <h2>{project.name}</h2>
+    <p>{project.description}</p>
+    <h3>{project.technologies}</h3>
+    <a id="github" href={project.githubLink} target="_blank" rel="noopener noreferrer" className="github-link">
+      <img src={require('../github.png')} alt="GitHub" className="github-icon" />
+    </a>
+  </div>
+);
 
-  transition: transform 0.2s;
-}
+const App = () => (
+  <div className="App">
+    <header className="App-header">
+    <TypingAnimation text="Projects" level="h1" />
+    </header>
 
-.project-card:hover {
-  transform: scale(1.05);
-}
+    <div className="projects-container">
+      {projects.map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
+    </div>
+  </div>
+);
 
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
-}
-
-.project-card h2 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
-
-.project-card p {
-  font-size: 1em;
-  color: #666;
-  margin: 10px 0;
-}
-
-.project-card h3 {
-  font-size: 1.2em;
-  margin: 10px 0;
-  color: #444;
-}
-
-.github-link {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.github-icon {
-  width: 35px;
-  height: 35px;
-  margin-right: 8px; /* Add some space between the icon and the text */
-}
-
-#github {
-  background: #fff;
-  float: right;
-  padding: 0%;
-  margin: 0;
-  margin-top: 10px;
-}
+export default App;
